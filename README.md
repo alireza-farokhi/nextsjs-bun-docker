@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 If you're wondering how to harness the combined power of Next.js, Docker, and PostgreSQL, while integrating Bun into the mix, you're in the right place. In this step-by-step guide, we'll walk you through deploying a Next.js app with these technologies/. Buckle up; it's time to take your deployment game to the next level.
-read the full giud on [Medium](https://alireza-farokhi.medium.com/how-to-deploy-a-next-js-app-with-bun-docker-and-postgressql-ee33bf2e9ec8/)
+read the full guide on [Medium](https://alireza-farokhi.medium.com/how-to-deploy-a-next-js-app-with-bun-docker-and-postgressql-ee33bf2e9ec8/)
 
 ## Getting Started
 # Docker
