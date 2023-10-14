@@ -13,7 +13,14 @@ RUN bun install
 # Uncomment the following line to disable telemetry at run time
 ENV NEXT_TELEMETRY_DISABLED 1
 
-# Start Next.js in development mode based on the preferred package manager
-CMD bun run dev
+# for deploting the build version
+
+RUN bun next build
+# and
+RUN bun next start
+
+# OR for sart Next.js in development, comment above two lines and uncomment below line
+
+# CMD bun run dev
 
 # Note: Don't expose ports here, Compose will handle that for us
