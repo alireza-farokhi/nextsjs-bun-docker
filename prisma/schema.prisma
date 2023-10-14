@@ -1,3 +1,4 @@
+// prisma/scheme.prisma
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -10,7 +11,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model tracktionUsers {
+model users {
   id      Int      @id @default(autoincrement())
   email   String   @unique
   name    String?
