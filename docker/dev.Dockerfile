@@ -9,6 +9,10 @@ RUN bun install
 
 COPY . .
 
+RUN bun prisma migrate dev --name init
+
+RUN bun prisma generate
+
 # Next.js collects completely anonymous telemetry data about general usage. Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line to disable telemetry at run time
 ENV NEXT_TELEMETRY_DISABLED 1

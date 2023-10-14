@@ -13,7 +13,7 @@ services:
     # Set environment variables directly in the docker-compose file
     environment:
       POSTGRES_ADDR: postgres
-      POSTGRES_DATABASE: midshiftDB
+      POSTGRES_DATABASE: next_app
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}?schema=public
@@ -38,7 +38,7 @@ services:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
       test:
-        ["CMD", "pg_isready", "-U", "postgres", "-d", "midshiftDB"]
+        ["CMD", "pg_isready", "-U", "postgres", "-d", "next_app"]
       interval: 5s
       timeout: 10s
       retries: 5
